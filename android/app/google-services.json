@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "674536385052",
+    "project_id": "masterplay-kd",
+    "storage_bucket": "masterplay-kd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674536385052:android:3ec7f0890069a297f6cdd9",
+        "android_client_info": {
+          "package_name": "com.kdsolution.masterplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674536385052-ivo9ok11650d2oac21udk0bvf9qkt9oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Uo2qEOtZrzyhyYnOoCmATtz7J_joPKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674536385052-ivo9ok11650d2oac21udk0bvf9qkt9oq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "674536385052-95u60tdl10o91j4i0jcfj4tceuuvpgh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kdsolution.masterplay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
