@@ -19,12 +19,12 @@ if (localPropertiesFile.exists()) {
 
 def flutterVersionCode = localProperties.getProperty("flutter.versionCode")
 if (flutterVersionCode == null) {
-    flutterVersionCode = "11"
+    flutterVersionCode = "12"
 }
 
 def flutterVersionName = localProperties.getProperty("flutter.versionName")
 if (flutterVersionName == null) {
-    flutterVersionName = "1.1.1"
+    flutterVersionName = "1.1.2"
 }
 
 android {
@@ -33,8 +33,8 @@ android {
     ndkVersion = "27.2.12479018"
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     defaultConfig {
@@ -51,7 +51,8 @@ android {
     signingConfigs {
         release  {
             Properties signingProps = new Properties();
-            FileInputStream signingPropsFile = new FileInputStream("C:/Users/pawan/OneDrive/MasterPlay/key.properties");
+            FileInputStream signingPropsFile = new FileInputStream("/Users/kishan_conexia/Library/Mobile Documents/com~apple~CloudDocs/app/code/master-play/key.properties");
+//            FileInputStream signingPropsFile = new FileInputStream("C:/Users/pawan/OneDrive/MasterPlay/key.properties");
             signingProps.load(signingPropsFile);
 
             storeFile file(signingProps['storeFile'])
@@ -61,7 +62,8 @@ android {
         }
         debug  {
             Properties signingProps = new Properties();
-            FileInputStream signingPropsFile = new FileInputStream("C:/Users/pawan/OneDrive/MasterPlay/key.properties");
+            FileInputStream signingPropsFile = new FileInputStream("/Users/kishan_conexia/Library/Mobile Documents/com~apple~CloudDocs/app/code/master-play/key.properties");
+//            FileInputStream signingPropsFile = new FileInputStream("C:/Users/pawan/OneDrive/MasterPlay/key.properties");
             signingProps.load(signingPropsFile);
 
             storeFile file(signingProps['storeFile'])
